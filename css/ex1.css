@@ -1,0 +1,44 @@
+/* font */
+@font-face {
+  font-family: "shsB";
+  src: url(../font/SpoqaHanSansNeo-Bold.ttf);
+}
+
+@font-face {
+  font-family: "shsM";
+  src: url(../font/SpoqaHanSansNeo-Medium.ttf);
+}
+
+@font-face {
+  font-family: "shsR";
+  src: url(../font/SpoqaHanSansNeo-Regular.ttf);
+}
+
+@font-face {
+  font-family: "shsL";
+  src: url(../font/SpoqaHanSansNeo-Light.ttf);
+}
+
+@font-face {
+  font-family: "shsT";
+  src: url(../font/SpoqaHanSansNeo-Thin.ttf);
+}
+
+body {
+  font-family: "shsR";
+  color: #333;
+}
+
+/* header */
+header{
+  width: 100%;
+  height: 100px;
+  background-color: yellowgreen;
+
+  display: flex;
+  justify-content: space-between;
+}
+
+header .etcbox{
+  display: none;
+}
