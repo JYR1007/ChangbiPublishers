@@ -30,14 +30,14 @@ body {
 }
 
 /* header */
-header{
+header {
   width: 100%;
   height: 100px;
   background-color: #fff;
   border-bottom: 1px solid #e6e6e6;
 }
 
-header .header_i{
+header .header_i {
   max-width: 1650px;
   height: 100%;
   background-color: violet;
@@ -49,7 +49,7 @@ header .header_i{
 }
 
 /* h > logo */
-header .header_i .logo{
+header .header_i .logo {
   width: 46px;
   height: 36px;
 }
@@ -57,17 +57,32 @@ header .header_i .logo{
 /* h > category */
 
 /* h > search */
-header .header_i .srchbox{
+header .header_i .srchbox {
   width: 200px;
   height: 76px;
   background-color: yellow;
 }
 
-header .header_i .srchbox .srchbox_top{
+header .header_i .srchbox .srchbox_top {
+  display: flex;
+  justify-content: space-between;
+}
+
+header .header_i .srchbox .srchbox_top a {
   display: flex;
 }
 
+header .header_i .srchbox .srchbox_top a i {
+  width: 14px;
+  height: 14px;
+  margin-right: 4px;
+}
+
+header .header_i .srchbox .srchbox_top a .srchtext {
+  font-size: 14px;
+}
+
 /* h > etc */
-header .header_i .etcbox{
+header .header_i .etcbox {
   display: none;
 }
