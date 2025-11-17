@@ -33,7 +33,8 @@ body {
 header{
   width: 100%;
   height: 100px;
-  background-color: yellowgreen;
+  background-color: #fff;
+  border-bottom: 1px solid #e6e6e6;
 }
 
 header .header_i{
@@ -47,11 +48,26 @@ header .header_i{
   justify-content: space-between;
 }
 
+/* h > logo */
 header .header_i .logo{
   width: 46px;
   height: 36px;
 }
 
+/* h > category */
+
+/* h > search */
+header .header_i .srchbox{
+  width: 200px;
+  height: 76px;
+  background-color: yellow;
+}
+
+header .header_i .srchbox .srchbox_top{
+  display: flex;
+}
+
+/* h > etc */
 header .header_i .etcbox{
   display: none;
 }
