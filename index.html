@@ -9,118 +9,165 @@
   <link rel="stylesheet" href="./css/reset.css">
   <link rel="stylesheet" href="./css/main.css">
   <script src="https://kit.fontawesome.com/436bab4596.js" crossorigin="anonymous"></script>
+  <script src="js/jquery-3.7.1.min.js"></script>
+  <script src="js/main.js"></script>
 </head>
 
 <body>
-  <!-- header -->
-  <header>
-    <div class="header_i">
-      <!-- logo -->
-      <div class="logo">
-        <h1><a href="https://www.changbi.com/">
-            <img src="./img/changbi_logo.png" alt="logo">
-          </a></h1>
-      </div>
-      <!-- //logo -->
+  <div class="container" id="container">
 
-      <!-- category -->
-      <nav>
-        <ul class="category">
-          <li>
-            <a href="#">창비</a>
-            <div class="sub_ctg">
-              <ul class="sub_ctg_i">
-                <li><a href="#">회사 소개</a></li>
-                <li><a href="#">공동체</a></li>
-                <li><a href="#">새소식</a></li>
-                <li><a href="#">오시는 길</a></li>
-                <li><a href="#">채용</a></li>
-              </ul>
-            </div>
-          </li>
-          <li>
-            <a href="#">도서</a>
-            <div class="sub_ctg">
-              <ul class="sub_ctg_i">
-                <li><a href="#">창비의 책</a></li>
-                <li><a href="#">저자</a></li>
-                <li><a href="#">자료실</a></li>
-              </ul>
-            </div>
-          </li>
-          <li>
-            <a href="#">매거진</a>
-            <div class="sub_ctg">
-              <ul class="sub_ctg_i">
-                <li><a href="#">창작과비평</a></li>
-                <li><a href="#">창비어린이</a></li>
-              </ul>
-            </div>
-          </li>
-          <li>
-            <a href="#">문학상/투고</a>
-            <div class="sub_ctg">
-              <ul class="sub_ctg_i">
-                <li><a href="#">문학상/공모</a></li>
-                <li><a href="#">단행본 투고</a></li>
-              </ul>
-            </div>
-          </li>
-          <li>
-            <a href="#">문의</a>
-            <div class="sub_ctg">
-              <ul class="sub_ctg_i">
-                <li><a href="#">1:1 문의</a></li>
-                <li><a href="#">2차 저작권 안내</a></li>
-              </ul>
-            </div>
-          </li>
-        </ul>
-      </nav>
-      <!-- //category -->
-
-      <!-- searchbox -->
-      <div class="srchbox">
-        <div class="srchbox_top">
-          <a href="#">
-            <i class="fa-solid fa-globe"></i>
-            <p class="srchtext globe">영문 ENG</p>
-          </a>
-          <a href="#">
-            <i class="fa-solid fa-pencil"></i>
-            <p class="srchtext pencil">창비교육 교과서</p>
-          </a>
-        </div>
-
-        <div class="srchbox_btm">
-          <input type="text" class="srch_input">
-          <button class="srch_button">
-            <img src="img/headersearchicon.png">
-          </button>
-        </div>
-      </div>
-      <!-- //searchbox -->
-
-      <!-- 1100~500 -->
-      <div class="etcbox">
-        <a href="#">
-          <img src="./img/mobilesearch.png">
-        </a>
-        <figure>
-          <img src="./img/hamburger.png">
-        </figure>
-      </div>
-      <!-- //1100~500 -->
+    <div class="sidebar">
+      <ul class="menu-list">
+        <li><a href="#" onclick="return false">창비</a></li>
+        <li><a href="#" onclick="return false">도서</a></li>
+        <li><a href="#" onclick="return false">매거진</a></li>
+        <li><a href="#" onclick="return false">문학상/투고</a></li>
+        <li><a href="#" onclick="return false">문의</a></li>
+        <li><a href="#" onclick="return false">영문 ENG</a></li>
+        <li><a href="#" onclick="return false">창비교육 교과서</a></li>
+      </ul>
     </div>
-  </header>
-  <!-- //header -->
 
-  <!-- main -->
-  <div class="main">
-    <div class="main_i">
-      <!-- left -->
-      <div class="main_left">
-        <div class="left_text">
+    <!-- header -->
+    <header>
+      <div class="header_i">
+        <div class="logo">
+          <h1><a href="https://www.changbi.com/">
+              <img src="./img/changbi_logo.png" alt="logo">
+            </a></h1>
+        </div>
+
+        <ul class="main-nav">
+          <li class="nav-item">
+            <a href="#" class="nav-link">창비</a>
+          </li>
+
+          <li class="nav-item">
+            <a href="#" class="nav-link">도서</a>
+          </li>
+
+          <li class="nav-item">
+            <a href="#" class="nav-link">매거진</a>
+          </li>
+
+          <li class="nav-item">
+            <a href="#" class="nav-link">문학상/투고</a>
+          </li>
+
+          <li class="nav-item">
+            <a href="#" class="nav-link">문의</a>
+          </li>
+
+          <div class="mega-dropdown">
+            <div class="mega-dropdown-inner">
+              <div class="dropdown-column">
+                <ul class="dropdown-list">
+                  <li class="dropdown-item">
+                    <a href="#" class="dropdown-link">회사 소개</a>
+                  </li>
+                  <li class="dropdown-item">
+                    <a href="#" class="dropdown-link">공동체</a>
+                  </li>
+                </ul>
+              </div>
+
+              <div class="dropdown-column">
+                <ul class="dropdown-list">
+                  <li class="dropdown-item">
+                    <a href="#" class="dropdown-link">창비의 책</a>
+                  </li>
+                  <li class="dropdown-item">
+                    <a href="#" class="dropdown-link">저자</a>
+                  </li>
+                  <li class="dropdown-item">
+                    <a href="#" class="dropdown-link">세소식</a>
+                  </li>
+                  <li class="dropdown-item">
+                    <a href="#" class="dropdown-link">자료실</a>
+                  </li>
+                  <li class="dropdown-item">
+                    <a href="#" class="dropdown-link">오시는 길</a>
+                  </li>
+                  <li class="dropdown-item">
+                    <a href="#" class="dropdown-link">채용</a>
+                  </li>
+                </ul>
+              </div>
+
+              <div class="dropdown-column">
+                <ul class="dropdown-list">
+                  <li class="dropdown-item">
+                    <a href="#" class="dropdown-link">창작과비평</a>
+                  </li>
+                  <li class="dropdown-item">
+                    <a href="#" class="dropdown-link">창비어린이</a>
+                  </li>
+                </ul>
+              </div>
+
+              <div class="dropdown-column">
+                <ul class="dropdown-list">
+                  <li class="dropdown-item">
+                    <a href="#" class="dropdown-link">문학상/공모</a>
+                  </li>
+                  <li class="dropdown-item">
+                    <a href="#" class="dropdown-link">단행본 투고</a>
+                  </li>
+                </ul>
+              </div>
+
+              <div class="dropdown-column">
+                <ul class="dropdown-list">
+                  <li class="dropdown-item">
+                    <a href="#" class="dropdown-link">1:1 문의</a>
+                  </li>
+                  <li class="dropdown-item">
+                    <a href="#" class="dropdown-link">2차 저작권 안내</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </ul>
+
+        <div class="srchbox">
+          <div class="srchbox_top">
+            <a href="#">
+              <i class="fa-solid fa-globe"></i>
+              <p class="srchtext globe">영문 ENG</p>
+            </a>
+            <a href="#">
+              <i class="fa-solid fa-pencil"></i>
+              <p class="srchtext pencil">창비교육 교과서</p>
+            </a>
+          </div>
+
+          <div class="srchbox_btm">
+            <input type="text" class="search-input">
+            <button></button>
+          </div>
+        </div>
+
+        <div class="etcbox">
+          <a href="#">
+            <img src="./img/mobilesearch.png">
+          </a>
+          <figure class="hamburger">
+            <img src="./img/hamburger.png" alt="ham">
+          </figure>
+          <figure class="close">
+            <img src="img/close2.png" alt="close">
+          </figure>
+        </div>
+      </div>
+    </header>
+    <!-- //header -->
+
+    <!-- main -->
+    <div class="main">
+      <div class="main_i">
+        <!-- left -->
+        <div class="main_left">
           <h2 class="left_t1">
             한결같되<br>
             날로 새롭게
@@ -129,355 +176,411 @@
             1966년부터 지금까지<br>
             독자와 함께 더 나은 세상을
           </h4>
-          <a href="#">
-            <p class="left_t3">회사 소개 보러가기</p>
-            <img src="./img/rightarrow.png">
+          <a href="#" class="left_t3">
+            회사 소개 보러가기
           </a>
         </div>
-      </div>
-      <!-- //left -->
+        <!-- //left -->
 
-      <!-- right -->
-      <div class="main_right">
-        <img src="./img/main-visual-202403.png">
-      </div>
-      <!-- //right -->
-    </div>
-  </div>
-  <!-- //main -->
-
-  <!-- cn -->
-  <div class="cn">
-    <div class="cn_i">
-      <!-- left -->
-      <div class="cn_left">
-        <h4 class="cn_t1">창비 새소식</h4>
-        <a href="#">
-          <p class="cn_t2">더보기</p>
-          <img src="./img/rightarrow.png">
-        </a>
-      </div>
-      <!-- //left -->
-
-      <!-- right -->
-      <ul class="cn_right">
-        <li><a href="#">
-            <strong>
-              <span>발표</span> 제17회 창비어린이 신인문학상 발표
-            </strong>
-            <p>2025.11.13</p>
-          </a></li>
-        <li><a href="#">
-            <strong>
-              <span>발표</span> 제19회 창비청소년문학상 수상작 발표
-            </strong>
-            <p>2025.11.11</p>
-          </a></li>
-        <li><a href="#">
-            <strong>
-              <span>발표</span> 제27회 백석문학상 발표
-            </strong>
-            <p>2025.11.11</p>
-          </a></li>
-        <li><a href="#">
-            <strong>
-              <span>소식</span> 채길우 시집『측광』, 제16회 김만중문학상 수상
-            </strong>
-            <p>2025.11.10</p>
-          </a></li>
-        <li><a href="#">
-            <strong>
-              <span>채용</span> (주)창비에서 담론·학술, 어린이책 담당 사원을 모집합니다.
-            </strong>
-            <p>2025.10.27</p>
-          </a></li>
-      </ul>
-      <!-- //right -->
-    </div>
-  </div>
-  <!-- //cn-->
-
-  <!-- nb -->
-  <div class="nb">
-    <div class="nb_i">
-      <!-- left -->
-      <div class="nb_left">
-        <h4 class="nb_t1">신간 도서</h4>
-        <a href="#">
-          <p class="nb_t2">더보기</p>
-          <img src="./img/rightarrow.png">
-        </a>
-      </div>
-      <!-- //left -->
-
-      <!-- right -->
-      <ul class="nb_right">
-        <li><a href="#">
-            <div class="nb_book bk1">
-              <img src="./img/img6.jpg">
-              <div class="nb_book_updown">
-                <span>멜론 몬스터 통통<br></span>
-                <span>지구는 처음이야<br></span>
-                <span>2025.11.14<br></span>
-                <span>14,000원<br></span>
-              </div>
-            </div>
-            <h4 class="nb_t1">멜론 몬스터 통통 1</h4>
-            <span class="nb_t2">유병록, 벼레</span>
-          </a></li>
-        <li><a href="#">
-            <div class="nb_book bk2">
-              <img src="./img/img1.jpg">
-              <div class="nb_book_updown">
-                <span>창비아동문고 349<br></span>
-                <span>2025.11.14<br></span>
-                <span>13,800원<br></span>
-              </div>
-            </div>
-            <h4 class="nb_t1">바다 비가 내리면</h4>
-            <span class="nb_t2">신주선, 방새미</span>
-          </a></li>
-        <li><a href="#">
-            <div class="nb_book bk3">
-              <img src="./img/img2.jpg">
-              <div class="nb_book_updown">
-                <span>편지로 읽는 한국문학의 발자취<br></span>
-                <span>2025.11.13<br></span>
-                <span>17,000원<br></span>
-              </div>
-            </div>
-            <h4 class="nb_t1">그간 격조했습니다</h4>
-            <span class="nb_t2">이동순</span>
-          </a></li>
-        <li><a href="#">
-            <div class="nb_book bk4">
-              <img src="./img/img3.jpg">
-              <div class="nb_book_updown">
-                <span>2025.11.07<br></span>
-                <span>16,800원<br></span>
-              </div>
-            </div>
-            <h4 class="nb_t1">따끈따끈 붕어빵 대결</h4>
-            <span class="nb_t2">김원훈</span>
-          </a></li>
-        <li><a href="#">
-            <div class="nb_book bk5">
-              <img src="./img/img4.jpg">
-              <div class="nb_book_updown">
-                <span>소설Y<br></span>
-                <span>2025.11.07<br></span>
-                <span>16,000원<br></span>
-              </div>
-            </div>
-            <h4 class="nb_t1">별이 우리에게 왔을 때</h4>
-            <span class="nb_t2">듀나</span>
-          </a></li>
-        <li><a href="#">
-            <div class="nb_book bk6">
-              <img src="./img/img5.jpg">
-              <div class="nb_book_updown">
-                <span>2025.11.07<br></span>
-                <span>45,000원<br></span>
-              </div>
-            </div>
-            <h4 class="nb_t1">국어 교과서 작품 읽기 중2 세트(최신 개정판/전3권)</h4>
-            <span class="nb_t2">신미나, 최지혜, 김미영, 서덕희, 조인혜, 주예지</span>
-          </a></li>
-      </ul>
-      <!-- //right -->
-    </div>
-  </div>
-  <!-- //nb -->
-
-  <!-- cac -->
-  <div class="cac">
-    <div class="cac_i">
-      <!-- left -->
-      <div class="cac_left">
-        <h4 class="cac_t1">계간 창작과비평</h4>
-        <a href="#">
-          <p class="cac_t2">정기구독 신청하기</p>
-          <img src="./img/rightarrow.png">
-        </a>
-      </div>
-      <!-- //left -->
-
-      <!-- right -->
-      <div class="cac_right">
-        <img src="./img/img7.jpg">
-        <div class="cac_right_text">
-          <h2 class="cac_t3">창작과비평 209호(2025년 가을호)</h2>
-          <a href="#">
-            <p class="cac_t4">자세히 보기</p>
-            <img src="./img/rightarrow.png">
-          </a>
+        <!-- right -->
+        <div class="main_right">
+          <img src="./img/main-visual-202403.png" alt="main">
         </div>
+        <!-- //right -->
       </div>
-      <!-- //right -->
     </div>
-  </div>
-  <!-- //cac -->
+    <!-- //main -->
 
-  <!-- cwc -->
-  <div class="cwc">
-    <div class="cwc_i">
-      <!-- left -->
-      <div class="cwc_left">
-        <h4 class="cwc_t1">창비주간논평</h4>
-        <h6 class="cwct2">더 나은 세상을 위해 발신하는 주간 온라인 웰컴</h6>
-        <a href="#">
-          <p class="cwc_t3">더보기</p>
-          <img src="./img/rightarrow.png">
-        </a>
-      </div>
-      <!-- //left -->
+    <!-- cn -->
+    <div class="cn">
+      <div class="cn_i">
+        <!-- left -->
+        <div class="cn_left">
+          <h4 class="cn_t1">창비 새소식</h4>
+          <a href="#" class="cn_t2">더보기</a>
+        </div>
+        <!-- //left -->
 
-      <!-- right -->
-      <div class="cwc_right">
-        <ul>
+        <!-- right -->
+        <ul class="cn_right">
           <li><a href="#">
-              <span>'K-방산' 열망에 던지는 네가지 질문</span>
-              <p>정욱식 - 2025.09.02</p>
+              <strong>
+                <span>발표</span> 제17회 창비어린이 신인문학상 발표
+              </strong>
+              <p>2025.11.13</p>
             </a></li>
           <li><a href="#">
-              <span>새 시대의 이야기를 쓰기 위하여</span>
-              <p>백지연 - 2025.08.26</p>
+              <strong>
+                <span>발표</span> 제19회 창비청소년문학상 수상작 발표
+              </strong>
+              <p>2025.11.11</p>
             </a></li>
           <li><a href="#">
-              <span>제3기 진실화해위원회, 중단 없는 과거사 해결이 필요하다</span>
-              <p>김재형 - 2025.08.19</p>
+              <strong>
+                <span>발표</span> 제27회 백석문학상 발표
+              </strong>
+              <p>2025.11.11</p>
+            </a></li>
+          <li><a href="#">
+              <strong>
+                <span>소식</span> 채길우 시집『측광』, 제16회 김만중문학상 수상
+              </strong>
+              <p>2025.11.10</p>
+            </a></li>
+          <li><a href="#">
+              <strong>
+                <span>채용</span> (주)창비에서 담론·학술, 어린이책 담당 사원을 모집합니다.
+              </strong>
+              <p>2025.10.27</p>
             </a></li>
         </ul>
-        <a href="#">
-          <p class="cwc_t3">주간논평 메일링 신청하기</p>
-          <img src="./img/rightarrow.png">
-        </a>
+        <!-- //right -->
       </div>
-      <!-- //right -->
     </div>
-  </div>
-  <!-- //cwc -->
+    <!-- //cn-->
 
-  <!-- footer -->
-  <div class="footer">
-    <div class="footer_i">
-      <!-- flogo -->
-      <div class="flogo">
-        <img src="./img/footerlogo.png">
-      </div>
-      <!-- //flogo -->
+    <!-- nb -->
+    <div class="nb">
+      <div class="nb_i">
+        <!-- left -->
+        <div class="nb_left">
+          <h4 class="nb_t1">신간 도서</h4>
+          <a href="#" class="nb_t2">더보기</a>
+        </div>
+        <!-- //left -->
 
-      <!-- fcontents -->
-      <div class="fcontents">
-        <ul class="fc_left">
-          <li><a href="#">
-              회사/연구
-              <div class="f_sub">
-                <ul class="f_sub_i">
-                  <li><a href="#">Changbi English</a></li>
-                  <li><a href="#">창비교육</a></li>
-                  <li><a href="#">미디어창비</a></li>
-                  <li><a href="#">세교연구소</a></li>
-                </ul>
-              </div>
-            </a></li>
-          <li><a href="#">
-              연재
-              <div class="f_sub">
-                <ul class="f_sub_i">
-                  <li><a href="#">창작과비평 전자구독</a></li>
-                  <li><a href="#">시요일</a></li>
-                </ul>
-              </div>
-            </a></li>
-          <li><a href="#">
-              도서관/학교
-              <div class="f_sub">
-                <ul class="f_sub_i">
-                  <li><a href="#">책씨앗</a></li>
-                  <li><a href="#">더책</a></li>
-                  <li><a href="#">오디오스쿨</a></li>
-                  <li><a href="#">창비교육연수원</a></li>
-                </ul>
-              </div>
-            </a></li>
-          <li><a href="#">
-              대관
-              <div class="f_sub">
-                <ul class="f_sub_i">
-                  <li><a href="#">창비서교빌딩</a></li>
-                  <li><a href="#">스튜디오 창비</a></li>
-                </ul>
-              </div>
-            </a></li>
-        </ul>
+        <!-- right -->
+        <div class="nb_right">
+          <div class="card">
+            <div class="card-image-wrapper">
+              <img src="./img/img6.jpg" class="card-image" alt="nbimg1">
 
-        <div class="fc_right">
-          <p class="fcr_t1">커뮤니티</p>
-          <div class="fc_rbox">
-            <a href="#">
-              <img src="./img/changbi_edu.png">
-              <span class="fc_rst">
-                국어 │ 사회 │ 미술<br>
-                수업지원자료실
-              </span>
-            </a>
-            <a href="#">
-              <img src="./img/clubchangbi.png">
-              <span class="fc_rst">
-                프리미엄 독서 멤버십 서비스,<br>
-                클럽창비
-              </span>
-            </a>
-            <a href="#">
-              <img src="./img/changbibusan.png">
-              <span class="fc_rst">
-                책과 이야기가<br>
-                머무는 공간, 창비부산
-              </span>
-            </a>
-            <a href="#">
-              <img src="./img/cafechangbi.png">
-              <span class="fc_rst">
-                일상을 깨우는<br>
-                책과 커피, 카페창비
-              </span>
-            </a>
+              <div class="overlay">
+                <h3>멜론 몬스터 통통</h3>
+                <p>지구는 처음이야</p>
+                <p>2025.11.14</p>
+                <p class="price">14,000원</p>
+              </div>
+            </div>
+
+            <div class="card-info">
+              <div class="card-title">멜론 몬스터 통통 1</div>
+              <div class="card-meta">유병록, 버제</div>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card-image-wrapper">
+              <img src="./img/img1.jpg" class="card-image" alt="nbimg2">
+
+              <div class="overlay">
+                <h3>창비아동문고 349</h3>
+                <p>2025.11.14</p>
+                <p class="price">13,800원</p>
+              </div>
+            </div>
+
+            <div class="card-info">
+              <div class="card-title">바다 비가 내리면</div>
+              <div class="card-meta">신주선, 방새미</div>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card-image-wrapper">
+              <img src="./img/img2.jpg" class="card-image" alt="nbimg3">
+
+              <div class="overlay">
+                <h3>편지로 읽는 한국문학의 발자취</h3>
+                <p>2025.11.13</p>
+                <p class="price">17,000원</p>
+              </div>
+            </div>
+
+            <div class="card-info">
+              <div class="card-title">그간 격조했습니다</div>
+              <div class="card-meta">이동순</div>
+            </div>
+          </div>
+
+          <div class="card cardA">
+            <div class="card-image-wrapper">
+              <img src="./img/img3.jpg" alt="nbimg4" class="card-image imgA">
+
+              <div class="overlay">
+                <p>2025.11.07</p>
+                <p class="price">16,800원</p>
+              </div>
+            </div>
+
+            <div class="card-info">
+              <div class="card-title">따끈따끈 붕어빵 대결</div>
+              <div class="card-meta">김원훈</div>
+            </div>
+          </div>
+
+          <div class="card cardA">
+            <div class="card-image-wrapper">
+              <img src="./img/img4.jpg" class="card-image" alt="nbimg5">
+
+              <div class="overlay">
+                <h3>소설Y</h3>
+                <p>2025.11.07</p>
+                <p class="price">16,000원</p>
+              </div>
+            </div>
+
+            <div class="card-info">
+              <div class="card-title">별이 우리에게 왔을 때</div>
+              <div class="card-meta">듀나</div>
+            </div>
+          </div>
+
+          <div class="card cardA">
+            <div class="card-image-wrapper">
+              <img src="./img/img5.jpg" class="card-image imgA" alt="nbimg6">
+
+              <div class="overlay">
+                <p>2025.11.07</p>
+                <p class="price">45,000원</p>
+              </div>
+            </div>
+
+            <div class="card-info">
+              <div class="card-title">국어 교과서 작품 읽기 중2 세트(최신 개정판/전3권)</div>
+              <div class="card-meta">신미나, 최지혜, 김미영, 서덕희, 조인혜, 주예지</div>
+            </div>
+          </div>
+
+          <div class="card cardA cardB">
+            <div class="card-image-wrapper">
+              <img src="./img/img8.jpg" class="card-image" alt="nbimg7">
+
+              <div class="overlay">
+                <h3>2025.11.07</h3>
+                <p class="price">15,000원</p>
+              </div>
+            </div>
+
+            <div class="card-info">
+              <div class="card-title">국어 교과서 작품 읽기: 중2 수필·비문학(최신 개정판)</div>
+              <div class="card-meta">조인혜, 주예지</div>
+            </div>
+          </div>
+
+          <div class="card cardA cardB">
+            <div class="card-image-wrapper">
+              <img src="./img/img9.jpg" class="card-image imgA" alt="nbimg8">
+
+              <div class="overlay">
+                <p>2025.11.07</p>
+                <p class="price">15,000원</p>
+              </div>
+            </div>
+
+            <div class="card-info">
+              <div class="card-title">국어 교과서 작품 읽기: 중2 소설(최신 개정판)</div>
+              <div class="card-meta">김미영, 서덕희</div>
+            </div>
           </div>
         </div>
+        <!-- right -->
       </div>
-      <!-- //fcontents -->
+    </div>
+    <!-- //nb -->
 
-      <!-- finfo -->
-      <div class="finfo">
-        <span>
-          copyright (c) Changbi Publishers, Inc. All Rights Reserved.<br>
-          10881 경기도 파주시 회동길 184 (413-756 경기도 파주시 문발동 출판문화정보산업단지 513-11)<br>
-          전화 031-955-3333(월~금 10시~17시, 점심시간 11시 30분~13시) | 메일 changbi_pr@changbi.com<br>
-          대표이사: 염종선 | 사업자등록번호: 105-81-63672 | <a href="#">개인정보처리방침</a>
-        </span>
+    <!-- cac -->
+    <div class="cac">
+      <div class="cac_i">
+        <!-- left -->
+        <div class="cac_left">
+          <h4 class="cac_t1">계간 창작과비평</h4>
+          <a href="#" class="cac_t2">정기구독 신청하기</a>
+        </div>
+        <!-- //left -->
+
+        <!-- right -->
+        <div class="cac_right">
+          <img src="./img/img7.jpg" alt="cac_rimg">
+          <div class="cac_right_text">
+            <h2 class="cac_t3">창작과비평 209호(2025년 가을호)</h2>
+            <a href="#" class="cac_t4">자세히 보기</a>
+          </div>
+        </div>
+        <!-- //right -->
       </div>
-      <!-- //finfo -->
+    </div>
+    <!-- //cac -->
 
-      <!-- btn -->
-       <div class="fbtn">
-        <div class="fbtn_i">
+    <!-- cwc -->
+    <div class="cwc">
+      <div class="cwc_i">
+        <!-- left -->
+        <div class="cwc_left">
+          <h4 class="cwc_t1">창비주간논평</h4>
+          <h6 class="cwc_t2">더 나은 세상을 위해 발신하는 주간 온라인 웰컴</h6>
+          <a href="#" class="cwc_t3">더보기</a>
+        </div>
+        <!-- //left -->
+
+        <!-- right -->
+        <div class="cwc_right">
+          <ul>
+            <li><a href="#">
+                <span>'K-방산' 열망에 던지는 네가지 질문</span>
+                <p>정욱식 - 2025.09.02</p>
+              </a></li>
+            <li><a href="#">
+                <span>새 시대의 이야기를 쓰기 위하여</span>
+                <p>백지연 - 2025.08.26</p>
+              </a></li>
+            <li><a href="#">
+                <span>제3기 진실화해위원회, 중단 없는 과거사 해결이 필요하다</span>
+                <p>김재형 - 2025.08.19</p>
+              </a></li>
+          </ul>
+          <a href="#" class="cwc_t4">주간논평 메일링 신청하기</a>
+        </div>
+        <!-- //right -->
+      </div>
+    </div>
+    <!-- //cwc -->
+
+    <!-- footer -->
+    <div class="footer">
+      <div class="footer_i">
+        <!-- flogo -->
+        <div class="flogo">
+          <img src="./img/footerlogo.png" alt="flogo">
+        </div>
+        <!-- //flogo -->
+
+        <!-- fcontents -->
+        <div class="fcontents">
+          <div class="fc_left">
+            <div class="fc_s">
+              <div class="fc_t">회사/연구</div>
+              <div class="fc_l">
+                <a href="#" class="fc_i">Changbi English</a>
+                <a href="#" class="fc_i">창비교육</a>
+                <a href="#" class="fc_i">미디어창비</a>
+                <a href="#" class="fc_i">세교연구소</a>
+              </div>
+            </div>
+            <div class="fc_s">
+              <div class="fc_t">연재</div>
+              <div class="fc_l">
+                <a href="#" class="fc_i">창작과비평 전자구독</a>
+                <a href="#" class="fc_i">시요일</a>
+              </div>
+            </div>
+            <div class="fc_s">
+              <div class="fc_t">도서관/학교</div>
+              <div class="fc_l">
+                <a href="#" class="fc_i">책씨앗</a>
+                <a href="#" class="fc_i">더책</a>
+                <a href="#" class="fc_i">오디오스쿨</a>
+                <a href="#" class="fc_i">창비교육연수원</a>
+              </div>
+            </div>
+            <div class="fc_s">
+              <div class="fc_t">대관</div>
+              <div class="fc_l">
+                <a href="#" class="fc_i">창비서교빌딩</a>
+                <a href="#" class="fc_i">스튜디오 창비</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="fc_right">
+            <p class="fcr_t1">커뮤니티</p>
+            <div class="fc_rbox">
+              <a href="#">
+                <img src="./img/changbi_edu.png" alt="fcr_logo1">
+                <span class="fc_rst">
+                  국어 │ 사회 │ 미술<br>
+                  수업지원자료실
+                </span>
+              </a>
+              <a href="#">
+                <img src="./img/clubchangbi.png" alt="fcr_logo2">
+                <span class="fc_rst">
+                  프리미엄 독서 멤버십 서비스,<br>
+                  클럽창비
+                </span>
+              </a>
+              <a href="#">
+                <img src="./img/changbibusan.png" alt="fcr_logo3">
+                <span class="fc_rst">
+                  책과 이야기가<br>
+                  머무는 공간, 창비부산
+                </span>
+              </a>
+              <a href="#">
+                <img src="./img/cafechangbi.png" alt="fcr_logo4">
+                <span class="fc_rst">
+                  일상을 깨우는<br>
+                  책과 커피, 카페창비
+                </span>
+              </a>
+            </div>
+          </div>
+        </div>
+        <!-- //fcontents -->
+
+        <!-- finfo -->
+        <div class="finfo">
+          <span>
+            copyright (c) Changbi Publishers, Inc. All Rights Reserved.<br>
+            10881 경기도 파주시 회동길 184 (413-756 경기도 파주시 문발동 출판문화정보산업단지 513-11)<br>
+            전화 031-955-3333(월~금 10시~17시, 점심시간 11시 30분~13시) | 메일 changbi_pr@changbi.com<br>
+            대표이사: 염종선 | 사업자등록번호: 105-81-63672 | <a href="#" class="finfoA">개인정보처리방침</a>
+          </span>
+        </div>
+        <!-- //finfo -->
+
+        <!-- btn -->
+        <div class="fbtn">
           <div class="fsns">
-            <a href="#"><i class="fa-brands fa-instagram"></i></a>
-            <a href="#"><i class="fa-brands fa-twitter"></i></a>
-            <a href="#"><img src="./img/naver.png"></a>
-            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
-            <a href="#"><i class="fa-brands fa-youtube"></i></a>
+            <a href="#" class="ficonA">
+              <div class="A1_1">
+                <img src="./img/instar.png" alt="fcion_1">
+              </div>
+            </a>
+
+            <a href="#" class="ficonA">
+              <div class="A1_1">
+                <img src="./img/twtwer2.png" alt="fcion_2">
+              </div>
+            </a>
+
+            <a href="#" class="ficonA">
+              <div class="A1_1 A2">
+                <img src="./img/naver.png" alt="fcion_2">
+              </div>
+            </a>
+
+            <a href="#" class="ficonA">
+              <div class="A1_1">
+                <img src="./img/facebook.png" alt="fcion_3">
+              </div>
+            </a>
+
+            <a href="#" class="ficonA">
+              <div class="A1_1">
+                <img src="./img/youtube.png" alt="fcion_4">
+              </div>
+            </a>
           </div>
           <div class="fup">
             <p>↑</p>
           </div>
         </div>
-       </div>
-      <!-- //btn -->
+        <!-- //btn -->
+      </div>
     </div>
+    <!-- //footer -->
   </div>
-  <!-- //footer -->
 </body>
 
 </html>
