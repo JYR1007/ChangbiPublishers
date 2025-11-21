@@ -40,7 +40,15 @@ header {
   height: 100px;
   background-color: #fff;
   border-bottom: 1px solid #e6e6e6;
-  position: relative;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 998;
+  transition: transform 0.3s ease, left 0.3s ease; /* left transition 추가 */
+}
+
+header.hidden {
+  transform: translateY(-100%);
 }
 
 header .header_i {
@@ -157,17 +165,17 @@ header .header_i .etcbox {
 
 /* down */
 .mega-dropdown {
-  position: absolute;
-  top: 100%;
+  position: fixed;
+  top: 99px;
   left: 0;
   right: 0;
   background: #fff;
-  border-top: 1px solid #e0e0e0;
+  border-bottom: 1px solid #e0e0e0;
   opacity: 0;
   visibility: hidden;
   transform: translateY(-10px);
   transition: opacity 0.3s, visibility 0.3s, transform 0.3s;
-  z-index: 1000;
+  z-index: 999;
 }
 
 .main-nav:hover .mega-dropdown {
@@ -207,7 +215,6 @@ header .header_i .etcbox {
 .dropdown-link:hover {
   text-decoration-line: underline;
 }
-
 
 /* h > etc */
 header .header_i .etcbox {
@@ -830,6 +837,18 @@ header .header_i .etcbox {
 
 /* @media 1350px */
 @media screen and (max-width:1350px) {
+  header .header_i .srchbox{
+    display: none;
+  }
+
+  header .header_i .etcbox{
+    display: block;
+  }
+
+  header .header_i .etcbox figure{
+    display: none;
+  }
+  
   .footer .footer_i .fcontents {
     flex-direction: column-reverse;
   }
@@ -850,6 +869,15 @@ header .header_i .etcbox {
 
 /* media 1100px */
 @media screen and (max-width:1100px) {
+  header {
+    position: absolute;
+    transition: transform 0.3s ease;
+  }
+  
+  body.menu-open header {
+    transform: translateX(300px);
+  }
+
   .container {
     display: flex;
     flex-direction: column;
@@ -861,6 +889,10 @@ header .header_i .etcbox {
 
   .container.menu-open {
     transform: translateX(300px);
+  }
+
+  .container.menu-open header {
+    right: 300px;
   }
 
   .sidebar {
@@ -925,6 +957,7 @@ header .header_i .etcbox {
   }
 
   header .header_i .etcbox figure {
+    display: block;
     cursor: pointer;
   }
 
@@ -1004,6 +1037,14 @@ header .header_i .etcbox {
 
   .footer .footer_i .fcontents .fc_right .fc_rbox {
     margin-bottom: 16px;
+  }
+
+  .container.scrolled header {
+    position: fixed;
+  }
+  
+  .container.menu-open.scrolled header {
+    left: 300px;
   }
 }
 
