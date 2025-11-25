@@ -52,7 +52,7 @@ header.hidden {
 }
 
 header .header_i {
-  max-width: 1650px;
+  max-width: 1750px;
   height: 100%;
   margin: 0 auto;
   display: flex;
@@ -62,14 +62,19 @@ header .header_i {
 }
 
 header .header_i .logo {
+  width: 200px;
+}
+
+header .header_i .logo h1 a img{
   width: 46px;
   height: 36px;
 }
 
 .main-nav {
+  width: calc(50% - 160px);
   display: flex;
   list-style: none;
-  gap: 60px;
+  justify-content: space-between;
 }
 
 .nav-item {
@@ -102,17 +107,19 @@ header .header_i .srchbox .srchbox_top {
 header .header_i .srchbox .srchbox_top a {
   display: flex;
   margin: 8px 0;
+  color: #707070;
 }
 
-header .header_i .srchbox .srchbox_top a i {
+header .header_i .srchbox .srchbox_top a img {
   width: 14px;
   height: 14px;
-  margin-right: 6px;
+  margin-right: 4px;
   margin-top: 2px;
 }
 
 header .header_i .srchbox .srchbox_top a .srchtext {
   font-size: 14px;
+  font-family: 'shsM';
 }
 
 header .header_i .srchbox .srchbox_top a:hover .srchtext {
@@ -185,11 +192,11 @@ header .header_i .etcbox {
 }
 
 .mega-dropdown-inner {
-  max-width: 650px;
+  max-width: 800px;
   margin: 0 auto;
   padding: 40px 20px;
   display: flex;
-  gap: 60px 0px;
+  gap: 60px 0;
 }
 
 .dropdown-column {
@@ -228,7 +235,7 @@ header .header_i .etcbox {
 }
 
 .main .main_i {
-  max-width: 1650px;
+  max-width: 1750px;
   margin: 180px auto;
   margin-top: 280px;
   padding: 0 40px;
@@ -246,6 +253,7 @@ header .header_i .etcbox {
 .main .main_i .main_left .left_t1 {
   font-size: 56px;
   line-height: 80px;
+  letter-spacing: -.04em;
 }
 
 .main .main_i .main_left .left_t2 {
@@ -284,7 +292,7 @@ header .header_i .etcbox {
 }
 
 .cn .cn_i {
-  max-width: 1650px;
+  max-width: 1750px;
   margin: 180px auto;
   padding: 0 40px;
   display: flex;
@@ -364,7 +372,7 @@ header .header_i .etcbox {
 }
 
 .nb .nb_i {
-  max-width: 1650px;
+  max-width: 1750px;
   margin: 180px auto;
   display: flex;
   padding: 0 40px;
@@ -488,7 +496,7 @@ header .header_i .etcbox {
 }
 
 .cac .cac_i {
-  max-width: 1650px;
+  max-width: 1750px;
   margin: 180px auto;
   display: flex;
   padding: 0 40px;
@@ -568,7 +576,7 @@ header .header_i .etcbox {
 }
 
 .cwc .cwc_i {
-  max-width: 1650px;
+  max-width: 1750px;
   margin: 180px auto;
   display: flex;
   padding: 0 40px;
@@ -672,7 +680,7 @@ header .header_i .etcbox {
 }
 
 .footer .footer_i {
-  max-width: 1650px;
+  max-width: 1750px;
   margin: 80px auto;
   padding: 0 40px;
 
@@ -849,6 +857,10 @@ header .header_i .etcbox {
 
   header .header_i .etcbox figure{
     display: none;
+  }
+
+  .main-nav{
+    width: 50%;
   }
 
   .main .main_i .main_left{
@@ -1143,7 +1155,12 @@ header .header_i .etcbox {
   }
 
   header .header_i .logo {
-    width: 36px;
+    width: 50px;
+  }
+
+  header .header_i .logo h1 a img{
+    width: 34px;
+    height: auto;
   }
 
   .main .main_i {
