@@ -44,7 +44,7 @@ header {
   top: 0;
   left: 0;
   z-index: 998;
-  transition: transform 0.3s ease, left 0.3s ease; /* left transition 추가 */
+  transition: transform 0.3s ease, left 0.3s ease; 
 }
 
 header.hidden {
@@ -192,19 +192,19 @@ header .header_i .etcbox {
 }
 
 .mega-dropdown-inner {
-  max-width: 800px;
+  max-width: 1750px;
+  width: 100%;
   margin: 0 auto;
-  padding: 40px 20px;
+  padding: 40px;
   display: flex;
-  gap: 60px 0;
+  justify-content: space-between;
+  align-items: flex-start;
 }
 
 .dropdown-column {
   flex: 1;
-}
-
-.dropdown-list {
-  list-style: none;
+  display: flex;
+  justify-content: center;
 }
 
 .dropdown-item {
@@ -212,11 +212,13 @@ header .header_i .etcbox {
 }
 
 .dropdown-link {
+  width: fit-content;
   display: block;
   padding: 8px 0;
   text-decoration: none;
   font-size: 16px;
   transition: color 0.2s;
+  white-space: nowrap;
 }
 
 .dropdown-link:hover {
@@ -418,9 +420,6 @@ header .header_i .etcbox {
   width: 270px;
   overflow: hidden;
   cursor: pointer;
-}
-
-.nb .nb_i .nb_right .cardA {
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
@@ -851,12 +850,27 @@ header .header_i .etcbox {
     display: none;
   }
 
+  header .header_i .logo{
+    width: auto;
+  }
+
   header .header_i .etcbox{
     display: block;
   }
 
   header .header_i .etcbox figure{
     display: none;
+  }
+
+  .mega-dropdown{
+    display: flex;
+    justify-content: center;
+  }
+
+  .mega-dropdown-inner{
+    max-width: 1100px;
+    gap: 60px;
+    padding: 40px;
   }
 
   .main-nav{
@@ -904,26 +918,36 @@ header .header_i .etcbox {
 /* media 1100px */
 @media screen and (max-width:1100px) {
   header {
-    position: absolute;
     transition: transform 0.3s ease;
+  }
+
+  header.hidden{
+    position: absolute;
+    transform: translateY(-100%);
   }
   
   body.menu-open header {
-    transform: translateX(300px);
+    transform: translateX(-300px);
+  }
+
+  body.menu-open {
+    overflow: hidden;
+    position: fixed;
+    width: 100%;
   }
 
   .container {
     display: flex;
     flex-direction: column;
-    transition: transform 0.3s ease;
-
     position: relative;
-    right: 0;
+    transition: transform 0.3s ease;
   }
 
   .container.menu-open {
-    transform: translateX(300px);
+    right: 300px;
+    transition: transform 0.3s ease;
   }
+ 
 
   .container.menu-open header {
     right: 300px;
@@ -938,14 +962,14 @@ header .header_i .etcbox {
     height: 100%;
     background-color: #fff;
     border-left: 1px solid #e6e6e6;
-    z-index: 1000;
-    transition: left 0.3s ease;
-
+    z-index: 1001;
+    transition: right 0.3s ease;
     padding: 10px 20px;
+    overflow-y: auto;
   }
 
   .container.menu-open .sidebar {
-    left: 0;
+    right: 0;
   }
 
   .sidebar-header {
@@ -1036,7 +1060,9 @@ header .header_i .etcbox {
   }
 
   .nb .nb_i .nb_right .cardB {
-    display: block;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
   }
 
   .nb .nb_i .nb_right .card .card-image-wrapper .overlay h3{

@@ -1,22 +1,33 @@
-document.addEventListener('DOMContentLoaded', () => {
-  let lastScroll = 0;
-  const header = document.querySelector('header');
+$(function(){
 
-  window.addEventListener('scroll', () => {
-    const currentScroll = window.pageYOffset;
-    
-    if (currentScroll <= 0) {
-      header.classList.remove('hidden');
-      return;
-    }
-    
-    if (currentScroll > lastScroll && currentScroll > 100) {
-      header.classList.add('hidden');
-    } 
-    else if (currentScroll < lastScroll) {
-      header.classList.remove('hidden');
-    }
-    
-    lastScroll = currentScroll;
-  });
-});
+      let lastScrollTop = 0;
+      let isScroll = false;
+      let header = $("header");
+      let headerHeight = header.outerHeight(); 
+      console.log(headerHeight)
+
+      $(window).on('scroll',function(){
+        let scrollTop = $(this).scrollTop();
+        console.log(scrollTop);
+
+        if( scrollTop > headerHeight){
+
+          if( scrollTop > lastScrollTop && !isScroll ){
+            header.addClass('hidden');
+            isScroll = true;
+          } 
+          else if(scrollTop < lastScrollTop && isScroll) {
+            header.removeClass('hidden')
+            isScroll = false;
+          }
+
+        } else {
+          header.removeClass("hidden");
+          isScroll = false
+        }
+
+        lastScrollTop = scrollTop
+      
+      });
+
+    });

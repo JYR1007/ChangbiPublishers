@@ -1,26 +1,15 @@
 $(function() {
   $('.hamburger').on('click', function () {
-    $('.sidebar').stop().animate({
-      right: '0'
-    }, 500);
-
-    $('.container').stop().animate({
-      right: '300px'
-    }, 500);
-
+    $('body').addClass('menu-open');
+    $('body').addClass('container');
+    
     $(".hamburger").hide();
     $(".close").show();
-  })
+  });
 
-  $('.close').on('click', function(){
-    $('.sidebar').stop().animate({
-      right: '-300px'
-    }, 500);
-
-    $('.container').stop().animate({
-      right: '0'
-    }, 500);
-
+  $('.close, .sidebar-overlay').on('click', function(){
+    $('body').removeClass('menu-open');
+    
     $(".close").hide();
     $(".hamburger").show();
   });
