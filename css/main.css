@@ -30,6 +30,7 @@ body {
   font-size: 14px;
 }
 
+/* sidebar */
 .sidebar {
   display: none;
 }
@@ -163,11 +164,6 @@ header .header_i .srchbox .srchbox_btm button {
 
 header .header_i .srchbox .srchbox_btm button:hover {
   background-color: #e7e7e8;
-}
-
-/* h > etc */
-header .header_i .etcbox {
-  display: none;
 }
 
 /* down */
